@@ -1,0 +1,6 @@
+<div class="row">
+    <button (click)="showConfirm()" class="button col-md-offset-5 col-md-2">Clear My Cart</button>
+</div>
+<div *ngIf="shoppingList" class="myCart">
+    <app-cart-product *ngFor="let product of shoppingList" [product]="product" class="col-md-4"></app-cart-product>
+</div>

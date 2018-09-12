@@ -1,0 +1,13 @@
+.minus, .plus {
+    border-radius: 50%;
+    width: 27px;
+    text-align: center;
+    font-weight: bolder;
+    display: inline-block;
+    background-color: #ff004c;
+    color: white;
+    margin: 5%;
+    padding-bottom: 4px;
+    border: none;
+    outline: none;
+}

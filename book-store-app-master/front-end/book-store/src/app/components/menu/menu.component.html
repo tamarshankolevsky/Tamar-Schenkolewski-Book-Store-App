@@ -1,0 +1,7 @@
+<div class="container">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a routerLink="/bookStore/myAccount">My Account</a></li>
+      <li routerLinkActive="active"><a routerLink="/bookStore/products">Products</a></li>
+      <li *ngIf="localStorage.getItem(global.CurrentUser)" routerLinkActive="active"><a routerLink="/bookStore/cart">My Cart</a></li>
+    </ul>
+  </div>

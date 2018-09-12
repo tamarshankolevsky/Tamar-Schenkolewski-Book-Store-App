@@ -1,0 +1,13 @@
+#search{
+    border: none;
+    padding-left: 8px;
+    outline: none;
+}
+#group{
+    background-color: #fff;
+    border: solid 2px;
+    padding: 0.5% 1%;
+    border-radius: 5pc;
+    width: max-content;
+    margin: 1% auto;
+}

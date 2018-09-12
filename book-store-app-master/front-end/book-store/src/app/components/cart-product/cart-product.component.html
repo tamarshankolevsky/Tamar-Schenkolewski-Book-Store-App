@@ -1,0 +1,20 @@
+<div class="productContainer col-md-offset-1 col-md-10">
+    <div class="content">
+        <div class="imageContainer col-md-6">
+            <img src="{{product.product.imageLinks.smallThumbnail}}">
+        </div>
+        <div class="scrollbar col-md-6" id="style-2">
+            <div class="force-overflow">
+                <h3>{{product.product.title}}</h3>
+                <h4 class="subtitle">{{product.product.subtitle}}</h4>
+                <h5>
+                    <b>Amount: </b>{{product.amount}}</h5>
+                <button class="plus" (click)="incAmount()" placement="top" ngbTooltip="increase amount">+</button>
+                <button class="minus" (click)="decAmount()" placement="top" ngbTooltip="decrease amount">-</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <button (click)="showConfirm()" class="button col-md-offset-1 col-md-10">Remove Book</button>
+    </div>
+</div>

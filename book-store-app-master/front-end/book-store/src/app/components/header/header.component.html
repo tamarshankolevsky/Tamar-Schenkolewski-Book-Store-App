@@ -1,0 +1,14 @@
+<header class="row">
+  <app-logo></app-logo>
+  <app-menu class="col-md-offset-2 col-md-2"></app-menu>
+
+  <div class="user" *ngIf="localStorage.getItem(global.CurrentUser)">
+    <span class=" col-md-offset-4 userName">{{ json.parse(localStorage.getItem(global.CurrentUser)).firstName}} {{ json.parse(localStorage.getItem(global.CurrentUser)).lastName}}</span>
+    <img src="{{global.Uploads}}?fileName={{json.parse(localStorage.getItem(global.CurrentUser)).profileImageUrl}}">
+  </div>
+
+  <div class="user" *ngIf="!localStorage.getItem(global.CurrentUser)">
+    <span class=" col-md-offset-4 userName">Guest</span>
+    <img src="https://image.flaticon.com/icons/png/128/149/149071.png">
+  </div>
+</header>

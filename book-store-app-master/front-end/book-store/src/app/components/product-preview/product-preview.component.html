@@ -1,0 +1,16 @@
+<div class="productContainer col-md-offset-1 col-md-10">
+    <div class="content">
+        <div class="imageContainer col-md-6 ">
+            <img src="{{product.imageLinks.smallThumbnail}}">
+        </div>
+        <div class="scrollbar col-md-6" id="style-2">
+            <div class="force-overflow">
+                <h3>{{product.title}}</h3>
+                <h4 class="subtitle">{{product.subtitle}}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <button (click)="viewDetails()" class="button col-md-offset-1 col-md-10 preview">View Details</button>
+        </div>
+    </div>
+</div>
