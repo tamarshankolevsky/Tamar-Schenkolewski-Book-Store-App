@@ -26,4 +26,3 @@ npm start
 ##### See live demo:
 https://efrat-zadok-book-store.herokuapp.com
 
-
